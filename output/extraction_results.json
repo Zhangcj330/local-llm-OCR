@@ -1,0 +1,28 @@
+[
+  {
+    "form_type": "consent_form",
+    "raw_response": "",
+    "extracted_fields": {},
+    "confidence": "error",
+    "processing_time": 4.4187891483306885,
+    "model_used": "llama3.2-vision",
+    "timestamp": "2025-06-30T11:40:39.875988",
+    "error": "this model only supports one image while more than one image requested (status code: 400)",
+    "source_file": "SAMPLE-TAL_Consent_for_Accessing_Health_Information.pdf",
+    "total_processing_time": 4.643945932388306,
+    "status": "error"
+  },
+  {
+    "form_type": "medical_report",
+    "raw_response": "",
+    "extracted_fields": {},
+    "confidence": "error",
+    "processing_time": 0.11031723022460938,
+    "model_used": "llama3.2-vision",
+    "timestamp": "2025-06-30T11:40:41.074794",
+    "error": "this model only supports one image while more than one image requested (status code: 400)",
+    "source_file": "SAMPLE-TAL Medical Examiner's Confidential Report.pdf",
+    "total_processing_time": 1.1973540782928467,
+    "status": "error"
+  }
+]
