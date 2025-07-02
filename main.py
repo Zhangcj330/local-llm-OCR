@@ -42,14 +42,25 @@ def main():
                 
                 if result["status"] == "success":
                     print("✅ Processing successful!")
-                    print(f"Extracted {len(result['extracted_fields'])} fields")
                     
-                    # Display some key fields
-                    for key, value in list(result["extracted_fields"].items())[:5]:
-                        print(f"  {key}: {value}")
+                    # Get structured data
+                    structured_data = result["structured_data"]
+                    data_model_name = type(structured_data).__name__
+                    print(f"📋 Data model: {data_model_name}")
                     
-                    if len(result["extracted_fields"]) > 5:
-                        print(f"  ... and {len(result['extracted_fields']) - 5} more fields")
+                    # Display some key fields from structured data
+                    data_dict = structured_data.model_dump()
+                    non_empty_fields = {k: v for k, v in data_dict.items() if v and v != {} and v != []}
+                    
+                    print(f"📊 Extracted {len(non_empty_fields)} non-empty fields:")
+                    for key, value in list(non_empty_fields.items())[:5]:
+                        if isinstance(value, (dict, list)):
+                            print(f"  {key}: {type(value).__name__} with {len(value)} items")
+                        else:
+                            print(f"  {key}: {str(value)[:50]}{'...' if len(str(value)) > 50 else ''}")
+                    
+                    if len(non_empty_fields) > 5:
+                        print(f"  ... and {len(non_empty_fields) - 5} more fields")
                         
                 else:
                     print("❌ Processing failed:")
@@ -65,9 +76,18 @@ def main():
     output_dir = Path("output")
     output_dir.mkdir(exist_ok=True)
     
+    # Convert results for JSON serialization
+    serializable_results = []
+    for result in results:
+        serializable_result = result.copy()
+        # Convert Pydantic object to dictionary for JSON serialization
+        if "structured_data" in serializable_result:
+            serializable_result["structured_data"] = serializable_result["structured_data"].model_dump()
+        serializable_results.append(serializable_result)
+    
     output_file = output_dir / "extraction_results.json"
     with open(output_file, 'w', encoding='utf-8') as f:
-        json.dump(results, f, indent=2, ensure_ascii=False)
+        json.dump(serializable_results, f, indent=2, ensure_ascii=False)
     
     print(f"\n📁 Results saved to: {output_file}")
     print(f"Processed {len(results)} files total")

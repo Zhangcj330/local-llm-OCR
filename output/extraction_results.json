@@ -1,28 +1,26 @@
 [
   {
     "form_type": "consent_form",
-    "raw_response": "",
-    "extracted_fields": {},
-    "confidence": "error",
-    "processing_time": 4.4187891483306885,
+    "structured_data": null,
+    "processing_time": 0.00015997886657714844,
     "model_used": "llama3.2-vision",
-    "timestamp": "2025-06-30T11:40:39.875988",
-    "error": "this model only supports one image while more than one image requested (status code: 400)",
+    "timestamp": "2025-07-01T10:11:14.429865",
+    "error": "",
+    "traceback": "Traceback (most recent call last):\n  File \"/Users/tianying/Projects/local-llm-OCR/src/llm_processor.py\", line 113, in extract_form_data\n    structured_llm = llm_with_image.with_structured_output(structured_model)\n                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/langchain_core/language_models/base.py\", line 242, in with_structured_output\n    raise NotImplementedError\nNotImplementedError\n",
     "source_file": "SAMPLE-TAL_Consent_for_Accessing_Health_Information.pdf",
-    "total_processing_time": 4.643945932388306,
+    "total_processing_time": 0.24763703346252441,
     "status": "error"
   },
   {
     "form_type": "medical_report",
-    "raw_response": "",
-    "extracted_fields": {},
-    "confidence": "error",
-    "processing_time": 0.11031723022460938,
+    "structured_data": null,
+    "processing_time": 0.00012183189392089844,
     "model_used": "llama3.2-vision",
-    "timestamp": "2025-06-30T11:40:41.074794",
-    "error": "this model only supports one image while more than one image requested (status code: 400)",
+    "timestamp": "2025-07-01T10:11:15.548312",
+    "error": "",
+    "traceback": "Traceback (most recent call last):\n  File \"/Users/tianying/Projects/local-llm-OCR/src/llm_processor.py\", line 113, in extract_form_data\n    structured_llm = llm_with_image.with_structured_output(structured_model)\n                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/langchain_core/language_models/base.py\", line 242, in with_structured_output\n    raise NotImplementedError\nNotImplementedError\n",
     "source_file": "SAMPLE-TAL Medical Examiner's Confidential Report.pdf",
-    "total_processing_time": 1.1973540782928467,
+    "total_processing_time": 1.118053913116455,
     "status": "error"
   }
 ]
