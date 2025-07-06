@@ -1,0 +1,133 @@
+label,Field name,db_column,field_value,section_number,section_name,type
+reference number,reference_number,reference_number,202506253110,0,Top,text
+name of life to be insured,name_of_life_to_be_insured,name_of_life_to_be_insured,Kevin Smith,4,POLICY DETAILS,text
+Address,address,address,"717 Anzac Parade, Maroubra, NSW 2035",4,POLICY DETAILS,text
+Suburb,suburb,suburb,,4,POLICY DETAILS,text
+State,state,state,,4,POLICY DETAILS,text
+Postcode,postcode,postcode,,4,POLICY DETAILS,text
+Date of birth,date_of_birth,date_of_birth,1998-10-31,4,POLICY DETAILS,text
+Occupation,occupation,occupation,Consultant,4,POLICY DETAILS,text
+Licence number,licence_number,licence_number,1112223332025,4,POLICY DETAILS,text
+Passport number,passport_number,passport_number,X25062025,4,POLICY DETAILS,text
+Other ID description,other_id_description,other_id_description,,4,POLICY DETAILS,text
+Other ID number,other_id_number,other_id_number,,4,POLICY DETAILS,text
+Witness signature date,witness_signature_date,witness_signature_date,,4,POLICY DETAILS,text
+"Any disease, disorder or condition relating to the heart and circulatory system including high blood pressure, raised cholesterol, heart murmur, stroke, brain haemorrhage, or embolism, chest pain or palpitations?",yn 1,1,No,6,INFORMATION TO BE OBTAINED FROM APPLICANT,checkbox
+Diabetes or raised blood sugar levels?,yn 2,2,No,6,INFORMATION TO BE OBTAINED FROM APPLICANT,checkbox
+"Any disorder of the kidney, bladder or genitourinary system including prostate disorders, urinary tract infections, kidney stones, blood or protein in the urine?",yn 3,3,No,6,INFORMATION TO BE OBTAINED FROM APPLICANT,checkbox
+"Any disorder of the digestive system, liver, oesophagus, stomach, gall bladder, pancreas or bowel including reflux, hernia, ulcers, haemochromatosis, colitis or Crohn's disease?",yn 4,4,No,6,INFORMATION TO BE OBTAINED FROM APPLICANT,checkbox
+"Any cancer, leukaemia or tumour, lump, cyst or growth either malignant or benign (non-malignant)?",yn 5,5,No,6,INFORMATION TO BE OBTAINED FROM APPLICANT,checkbox
+"Asthma, sleep apnoea, or any other respiratory, lung or breathing disorder?",yn 6,6,No,6,INFORMATION TO BE OBTAINED FROM APPLICANT,checkbox
+"Head injury, epilepsy, fits, convulsions or chronic headaches?",yn 7,7,No,6,INFORMATION TO BE OBTAINED FROM APPLICANT,checkbox
+"Numbness, tingling, altered sensation, tremor, fainting attacks, problems with balance or co-ordination, or any form of paralysis or multiple sclerosis?",yn 8,8,No,6,INFORMATION TO BE OBTAINED FROM APPLICANT,checkbox
+"Any disorder of the eyes or ears, including blindness, blurred or double vision (other than sight problems corrected by glasses or contact lenses) or impaired hearing or tinnitus?",yn 9,9,No,6,INFORMATION TO BE OBTAINED FROM APPLICANT,checkbox
+"Eczema, dermatitis, psoriasis or any other skin condition?",yn 10,10,No,6,INFORMATION TO BE OBTAINED FROM APPLICANT,checkbox
+"Back or neck pain including muscular pain, strain, whiplash and sciatica?",yn 11,11,No,6,INFORMATION TO BE OBTAINED FROM APPLICANT,checkbox
+"Any joint (eg wrist, elbow, shoulder, ankle, knee, hip), bone or muscle pain or disorder including RSI?",yn 12,12,No,6,INFORMATION TO BE OBTAINED FROM APPLICANT,checkbox
+"Rheumatoid arthritis, other forms of arthritis, osteoporosis or gout?",yn 13,13,No,6,INFORMATION TO BE OBTAINED FROM APPLICANT,checkbox
+Any blood disorder including anaemia?,yn 14,14,No,6,INFORMATION TO BE OBTAINED FROM APPLICANT,checkbox
+Any thyroid disorder or lupus?,yn 15,15,No,6,INFORMATION TO BE OBTAINED FROM APPLICANT,checkbox
+"Depression, anxiety, panic attacks, stress, psychosis, schizophrenia, bipolar disorder, chronic fatigue, post natal depression or any other mental or nervous condition?",yn 16,16,No,6,INFORMATION TO BE OBTAINED FROM APPLICANT,checkbox
+"Any disorder of the cervix (including abnormal Pap smear), ovary, uterus, breast or endometrium, or are you currently pregnant?",yn 17,17,No,6,INFORMATION TO BE OBTAINED FROM APPLICANT,checkbox
+Any complications of pregnancy or childbirth or a child with congenital abnormalities?,yn 18,18,No,6,INFORMATION TO BE OBTAINED FROM APPLICANT,checkbox
+"Have you ever injected, smoked or otherwise taken recreational or non-prescription drugs, taken any drug other than as medically directed or received advice and/or counselling for excess alcohol consumption from any health professional?",yn 19,19,No,6,INFORMATION TO BE OBTAINED FROM APPLICANT,checkbox
+"Have you ever tested positive for HIV/AIDS, Hepatitis B or C, or are you awaiting the results of such a test (other than for this application)?",yn 20,20,No,6,INFORMATION TO BE OBTAINED FROM APPLICANT,checkbox
+"In the last 5 years have you engaged in any activity reasonably expected to having an increased risk or exposure to the HIV/AIDS virus? (This includes unprotected anal sex, sex with a sex worker or sex with someone you know, or suspect to be HIV positive).",yn 21,21,No,6,INFORMATION TO BE OBTAINED FROM APPLICANT,checkbox
+Have you in the last five years been absent from work or your usual duties for a period of more than five days through any illness or injury not previously disclosed in this application?,yn 22,22,No,6,INFORMATION TO BE OBTAINED FROM APPLICANT,checkbox
+"Apart from any condition already disclosed, do you have any symptoms of illness, any physical defect, or any condition for which you receive medical advice or treatment?",yn 23,23,No,6,INFORMATION TO BE OBTAINED FROM APPLICANT,checkbox
+"Apart from treating any condition already disclosed, have you in the last two years had medication prescribed (except contraceptives or antibiotics)?",yn 24,24,No,6,INFORMATION TO BE OBTAINED FROM APPLICANT,checkbox
+"Apart from investigating any condition already disclosed, have you had any medical test (eg ECG, colonoscopy, endoscopy, gastroscopy or ultrasound)?",yn 25,25,No,6,INFORMATION TO BE OBTAINED FROM APPLICANT,checkbox
+"Apart from investigating any condition already disclosed, have you ever had a genetic test where you received (or are currently awaiting) an individual result or are you considering having a genetic test (excluding genetic screening of a child during pregnancy)?",yn 26,26,No,6,INFORMATION TO BE OBTAINED FROM APPLICANT,checkbox
+"Apart from any condition already disclosed, do you plan to seek or are you awaiting medical advice, investigation or treatment for any other current health condition or symptoms?",yn 27,27,No,6,INFORMATION TO BE OBTAINED FROM APPLICANT,checkbox
+Heart disease (eg angina or heart attack) or stroke,yn 1,1,Yes,7,FAMILY HISTORY,checkbox
+Cardiomyopathy,yn 2,2,No,7,FAMILY HISTORY,checkbox
+"Breast, cervical and/or ovarian cancer",yn 3,3,No,7,FAMILY HISTORY,checkbox
+Bowel cancer or polyposis of the colon,yn 4,4,No,7,FAMILY HISTORY,checkbox
+Any other type of cancer,yn 5,5,No,7,FAMILY HISTORY,checkbox
+Diabetes,yn 6,6,No,7,FAMILY HISTORY,checkbox
+Alzheimer's disease,yn 7,7,No,7,FAMILY HISTORY,checkbox
+Multiple sclerosis,yn 8,8,No,7,FAMILY HISTORY,checkbox
+"Motor neurone disease, Parkinson's disease, Polycystic kidney disease and/or Huntington's disease, mental illness and/or any other hereditary disorder (not previously listed in this section).",yn 9,9,No,7,FAMILY HISTORY,checkbox
+known_to_examiner,known_to_examiner,known_to_examiner,False,8,CONFIDENTIAL MEDICAL EXAMINATION,text
+previously_attended_examiner,previously_attended_examiner,previously_attended_examiner,False,8,CONFIDENTIAL MEDICAL EXAMINATION,text
+unusual_build_or_behavior,unusual_build_or_behavior,unusual_build_or_behavior,No,8,CONFIDENTIAL MEDICAL EXAMINATION,text
+signs_of_tobacco_alcohol_or_drugs,signs_of_tobacco_alcohol_or_drugs,signs_of_tobacco_alcohol_or_drugs,No,8,CONFIDENTIAL MEDICAL EXAMINATION,text
+ever_smoked,ever_smoked,ever_smoked,False,8,CONFIDENTIAL MEDICAL EXAMINATION,text
+height_cm,height_cm,height_cm,177,9,MEASUREMENTS,text
+weight_kg,weight_kg,weight_kg,74,9,MEASUREMENTS,text
+chest_full_inspiration_cm,chest_full_inspiration_cm,chest_full_inspiration_cm,98,9,MEASUREMENTS,text
+chest_full_expiration_cm,chest_full_expiration_cm,chest_full_expiration_cm,92,9,MEASUREMENTS,text
+waist_circumference_cm,waist_circumference_cm,waist_circumference_cm,81,9,MEASUREMENTS,text
+hips_circumference_cm,hips_circumference_cm,hips_circumference_cm,96,9,MEASUREMENTS,text
+recent_weight_variation,recent_weight_variation,recent_weight_variation,False,9,MEASUREMENTS,text
+weight_variation_details,weight_variation_details,weight_variation_details,No,9,MEASUREMENTS,text
+chest_expansion_details,chest_expansion_details,chest_expansion_details,No,9,MEASUREMENTS,text
+respiratory_abnormality,respiratory_abnormality,respiratory_abnormality,No,10,RESPIRATORY SYSTEM,text
+respiratory_fabnormality_details,respiratory_fabnormality_details,respiratory_fabnormality_details,No,10,RESPIRATORY SYSTEM,text
+respiratory_sign,respiratory_sign,respiratory_sign,No,10,RESPIRATORY SYSTEM,text
+respiratory_sign_details,respiratory_sign_details,respiratory_sign_details,No,10,RESPIRATORY SYSTEM,text
+pulse_rate_and_character,pulse_rate_and_character,pulse_rate_and_character,"Rhythm regular, Strong and non-bounding, normal volume",11,CIRCULATORY SYSTEM,text
+apex_beat_position,apex_beat_position,apex_beat_position,fifth left interspace 10 cm from the mid-sternal line,11,CIRCULATORY SYSTEM,text
+apex_interspace,apex_interspace,apex_interspace,fifth left interspace,11,CIRCULATORY SYSTEM,text
+apex_distance_from_midsternal,apex_distance_from_midsternal,apex_distance_from_midsternal,10.0,11,CIRCULATORY SYSTEM,text
+cardiac_enlargement,cardiac_enlargement,cardiac_enlargement,False,11,CIRCULATORY SYSTEM,text
+cardiac_enlargement_details,cardiac_enlargement_details,cardiac_enlargement_details,No,11,CIRCULATORY SYSTEM,text
+abnormal_heart_sounds_or_rhythm,abnormal_heart_sounds_or_rhythm,abnormal_heart_sounds_or_rhythm,False,11,CIRCULATORY SYSTEM,text
+abnormal_heart_sounds_or_rhythm_details,abnormal_heart_sounds_or_rhythm_details,abnormal_heart_sounds_or_rhythm_details,No,11,CIRCULATORY SYSTEM,text
+murmurs,murmurs,murmurs,False,11,CIRCULATORY SYSTEM,text
+murmurs_details,murmurs_details,murmurs_details,No,11,CIRCULATORY SYSTEM,text
+bp_Systolic_1,bp_Systolic_1,bp_Systolic_1,118,11,CIRCULATORY SYSTEM,text
+bp_Diastolic_1,bp_Diastolic_1,bp_Diastolic_1,76,11,CIRCULATORY SYSTEM,text
+bp_Systolic_2,bp_Systolic_2,bp_Systolic_2,114,11,CIRCULATORY SYSTEM,text
+bp_Diastolic_2,bp_Diastolic_2,bp_Diastolic_2,74,11,CIRCULATORY SYSTEM,text
+bp_Systolic_3,bp_Systolic_3,bp_Systolic_3,116,11,CIRCULATORY SYSTEM,text
+bp_Diastolic_3,bp_Diastolic_3,bp_Diastolic_3,75,11,CIRCULATORY SYSTEM,text
+peripheral_abnormalities,peripheral_abnormalities,peripheral_abnormalities,False,11,CIRCULATORY SYSTEM,text
+peripheral_abnormalities_details,peripheral_abnormalities_details,peripheral_abnormalities_details,No,11,CIRCULATORY SYSTEM,text
+heart_and_vascular_system_abnormal,heart_and_vascular_system_abnormal,heart_and_vascular_system_abnormal,False,11,CIRCULATORY SYSTEM,text
+heart_and_vascular_system_abnormal_details,heart_and_vascular_system_abnormal_details,heart_and_vascular_system_abnormal_details,No,11,CIRCULATORY SYSTEM,text
+on_treatment_for_hypertension,on_treatment_for_hypertension,on_treatment_for_hypertension,False,11,CIRCULATORY SYSTEM,text
+hypertension_pretreatment_bp,hypertension_pretreatment_bp,hypertension_pretreatment_bp,No,11,CIRCULATORY SYSTEM,text
+hypertension_duration,hypertension_duration,hypertension_duration,No,11,CIRCULATORY SYSTEM,text
+hypertension_treatment_nature,hypertension_treatment_nature,hypertension_treatment_nature,No,11,CIRCULATORY SYSTEM,text
+hernia_present,hernia_present,hernia_present,False,12,"DIGESTIVE, ENDOCRINE AND LYMPH SYSTEMS",text
+hernia_details,hernia_details,hernia_details,No,12,"DIGESTIVE, ENDOCRINE AND LYMPH SYSTEMS",text
+lymph_gland_abnormality,lymph_gland_abnormality,lymph_gland_abnormality,False,12,"DIGESTIVE, ENDOCRINE AND LYMPH SYSTEMS",text
+lymph_gland_abnormality_details,lymph_gland_abnormality_details,lymph_gland_abnormality_details,No,12,"DIGESTIVE, ENDOCRINE AND LYMPH SYSTEMS",text
+genito_urinary_abnormality,genito_urinary_abnormality,genito_urinary_abnormality,False,13,GENITO-URINARY FINDINGS,text
+genito_urinary_abnormality_details,genito_urinary_abnormality_details,genito_urinary_abnormality_details,No,13,GENITO-URINARY FINDINGS,text
+urine_protein,urine_protein,urine_protein,False,13,GENITO-URINARY FINDINGS,text
+urine_sugar,urine_sugar,urine_sugar,False,13,GENITO-URINARY FINDINGS,text
+urine_blood,urine_blood,urine_blood,False,13,GENITO-URINARY FINDINGS,text
+urine_blood_menstruating,urine_blood_menstruating,urine_blood_menstruating,False,13,GENITO-URINARY FINDINGS,text
+urine_other_abnormalities,urine_other_abnormalities,urine_other_abnormalities,False,13,GENITO-URINARY FINDINGS,text
+urine_other_abnormalities_details,urine_other_abnormalities_details,urine_other_abnormalities_details,No,13,GENITO-URINARY FINDINGS,text
+is_pregnant,is_pregnant,is_pregnant,False,13,GENITO-URINARY FINDINGS,text
+expected_delivery_date,expected_delivery_date,expected_delivery_date,No,13,GENITO-URINARY FINDINGS,text
+vision_defect_or_eye_abnormality,vision_defect_or_eye_abnormality,vision_defect_or_eye_abnormality,False,14,NEUROLOGICAL SYSTEM,text
+vision_defect_or_eye_abnormality_details,vision_defect_or_eye_abnormality_details,vision_defect_or_eye_abnormality_details,"Mild myopia, astigmatism, and conjunctival nevus",14,NEUROLOGICAL SYSTEM,text
+hearing_or_speech_defect,hearing_or_speech_defect,hearing_or_speech_defect,False,14,NEUROLOGICAL SYSTEM,text
+hearing_or_speech_defect_details,hearing_or_speech_defect_details,hearing_or_speech_defect_details,Mild tinnitus,14,NEUROLOGICAL SYSTEM,text
+joint_abnormality,joint_abnormality,joint_abnormality,False,15,MUSCULOSKELETAL AND SKIN FINDINGS,text
+joint_abnormality_details,joint_abnormality_details,joint_abnormality_details,No,15,MUSCULOSKELETAL AND SKIN FINDINGS,text
+muscle_or_connective_tissue_abnormality,muscle_or_connective_tissue_abnormality,muscle_or_connective_tissue_abnormality,False,15,MUSCULOSKELETAL AND SKIN FINDINGS,text
+muscle_or_connective_tissue_abnormality_details,muscle_or_connective_tissue_abnormality_details,muscle_or_connective_tissue_abnormality_details,No,15,MUSCULOSKELETAL AND SKIN FINDINGS,text
+back_or_neck_abnormality,back_or_neck_abnormality,back_or_neck_abnormality,False,15,MUSCULOSKELETAL AND SKIN FINDINGS,text
+back_or_neck_abnormality_details,back_or_neck_abnormality_details,back_or_neck_abnormality_details,No,15,MUSCULOSKELETAL AND SKIN FINDINGS,text
+skin_disorder,skin_disorder,skin_disorder,False,15,MUSCULOSKELETAL AND SKIN FINDINGS,text
+skin_disorder_details,skin_disorder_details,skin_disorder_details,Seborrhoeic dermatitis caused by eczema,15,MUSCULOSKELETAL AND SKIN FINDINGS,text
+medical_attendants_reports_required,medical_attendants_reports_required,medical_attendants_reports_required,False,16,SUMMARY,text
+medical_attendants_reports_details,medical_attendants_reports_details,medical_attendants_reports_details,No,16,SUMMARY,text
+likely_to_require_surgery,likely_to_require_surgery,likely_to_require_surgery,False,16,SUMMARY,text
+likely_to_require_surgery_details,likely_to_require_surgery_details,likely_to_require_surgery_details,No,16,SUMMARY,text
+unfavourable_history_personal_or_family,unfavourable_history_personal_or_family,unfavourable_history_personal_or_family,"Mild stroke on father's side, due to heavy smoking and drinking.",16,SUMMARY,text
+unfavourable_findings_medical_exam,unfavourable_findings_medical_exam,unfavourable_findings_medical_exam,No,16,SUMMARY,text
+name,name,name,Dr. Chris Minns,17,EXAMINER DETAILS,text
+address,address,address,8 Kensington Street,17,EXAMINER DETAILS,text
+suburb,suburb,suburb,Chippendale,17,EXAMINER DETAILS,text
+state,state,state,NSW,17,EXAMINER DETAILS,text
+postcode,postcode,postcode,2008,17,EXAMINER DETAILS,text
+phone,phone,phone,0410 955 633,17,EXAMINER DETAILS,text
+personal_qualifications,personal_qualifications,personal_qualifications,"MBBS, MD",17,EXAMINER DETAILS,text
+signature_present,signature_present,signature_present,True,17,EXAMINER DETAILS,text
+date_signed,date_signed,date_signed,27/06/2025,17,EXAMINER DETAILS,text
