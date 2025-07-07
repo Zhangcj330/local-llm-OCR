@@ -42,43 +42,137 @@ class ClaimFormProcessor:
         
         if verbose:
             print(f"🔍 Starting multi-image LLM analysis... (Model: {self.model_name})")
-            print(f"📄 Processing {len(list_image_b64)} images together")
+            print(f"📄 Processing {len(list_image_b64)} images")
             print(f"⏰ Start time: {datetime.now().strftime('%H:%M:%S')}")
         
         try:
-            # Bind images to LLM context using chain binding (required for llama3.2-vision)
-            llm_with_image = self.llm
-            
-            # Bind images to LLM context using chain binding (required for llama3.2-vision)
-            # for image_b64 in list_image_b64:
-            #     llm_with_image = llm_with_image.bind(images=[image_b64])
-            
-            # Get appropriate prompt based on form type
-            prompt = self._get_extraction_prompt(form_type)
-            
-            # Create content blocks for Gemini format with HumanMessage
-            content_blocks = [{"type": "text", "text": prompt}]
-            
-            for b64 in list_image_b64:
-                content_blocks.append({
-                    "type": "image_url", 
-                    "image_url": f"data:image/png;base64,{b64}"
-                })
-
-            message = HumanMessage(content=content_blocks)
-
-            # Process with LLM
-            if verbose:
-                print("💭 LLM is analyzing the image and extracting information...")
-            
-            response = llm_with_image.invoke([message])
-            # response = llm_with_image.invoke(prompt)
-            return response 
+            # Choose processing strategy based on number of images
+            if len(list_image_b64) == 1:
+                if verbose:
+                    print("📄 Single page detected - using direct processing")
+                return self._process_single_page(list_image_b64[0], form_type, verbose)
+            else:
+                if verbose:
+                    print(f"📑 Multiple pages detected ({len(list_image_b64)}) - using sequential processing")
+                return self._process_multiple_pages_sequential(list_image_b64, form_type, verbose)
             
         except Exception as e:
             if verbose:
                 print(f"Error details: {str(e)}")
+            return f"Error processing images: {str(e)}"
+    
+    def _process_single_page(self, image_b64: str, form_type: str, verbose: bool) -> str:
+        """
+        Process a single page with full extraction prompt
+        """
+        if verbose:
+            print("💭 LLM is analyzing the single page...")
+        
+        # Use full extraction prompt for single page
+        prompt = self._get_extraction_prompt(form_type)
+        
+        content_blocks = [
+            {"type": "text", "text": prompt},
+            {"type": "image_url", "image_url": f"data:image/png;base64,{image_b64}"}
+        ]
+        
+        message = HumanMessage(content=content_blocks)
+        response = self.llm.invoke([message])
+        
+        return response.content
+    
+    def _process_multiple_pages_sequential(self, list_image_b64: list[str], form_type: str, verbose: bool) -> str:
+        """
+        Process multiple pages sequentially then combine results
+        """
+        page_results = []
+        
+        for i, image_b64 in enumerate(list_image_b64):
+            if verbose:
+                print(f"📄 Processing page {i+1}/{len(list_image_b64)}...")
             
+            # Get page-specific prompt
+            page_prompt = self._get_page_specific_prompt(form_type, i, len(list_image_b64))
+            
+            content_blocks = [
+                {"type": "text", "text": page_prompt},
+                {"type": "image_url", "image_url": f"data:image/png;base64,{image_b64}"}
+            ]
+            
+            message = HumanMessage(content=content_blocks)
+            page_response = self.llm.invoke([message])
+            
+            # Store page result with header
+            page_results.append(f"=== PAGE {i+1} CONTENT ===\n{page_response.content}")
+            
+            if verbose:
+                print(f"✅ Page {i+1} completed")
+        
+        # Combine all page results
+        combined_result = "\n\n".join(page_results)
+        
+        if verbose:
+            print("🔗 Combining results from all pages...")
+        
+        # Add summary header
+        final_result = f"""=== COMBINED EXTRACTION FROM {len(list_image_b64)} PAGES ===
+
+{combined_result}
+
+=== END OF EXTRACTION ==="""
+        
+        return final_result
+    
+    def _get_page_specific_prompt(self, form_type: str, page_index: int, total_pages: int) -> str:
+        """
+        Generate page-specific extraction prompt based on page position
+        """
+        base_instruction = f"""
+        This is page {page_index + 1} of {total_pages} from a {form_type} form.
+        
+        Extract ALL visible information from this page only. Be thorough and include:
+        - Any personal details (names, addresses, dates, ID numbers)
+        - Any medical questions and their answers (Y/N/Yes/No plus details)
+        - Any measurements, test results, or examination findings
+        - Any checkboxes (marked or unmarked)
+        - Any signatures, dates, or handwritten notes
+        - Any examiner comments or conclusions
+        
+        Format your response clearly with section headers when appropriate.
+        For yes/no questions, clearly indicate the question number and answer.
+        For any unclear text, note it as "unclear" rather than guessing.
+        """
+        
+        # Add page-specific guidance based on common medical form structure
+        if page_index == 0:
+            page_guidance = """
+        
+        This is typically the first page, which usually contains:
+        - Basic personal information (name, DOB, address)
+        - Policy/reference numbers
+        - Contact details and identification
+        - Initial signatures or declarations
+        """
+        elif page_index == 1 and total_pages > 2:
+            page_guidance = """
+        
+        This is typically a middle page, which may contain:
+        - Medical history questions (numbered list with Y/N answers)
+        - Family history information
+        - Detailed medical questionnaires
+        """
+        else:
+            page_guidance = """
+        
+        This may be a later page, which often contains:
+        - Physical examination results
+        - Measurements and vital signs
+        - Doctor's observations and conclusions
+        - Examiner details and signatures
+        """
+        
+        return base_instruction + page_guidance
+    
     def extract_structured_data(self, response: str, form_type: str = "generic", verbose: bool = True) -> Any:
         """
         Convert raw LLM response to structured Pydantic data object using staged extraction

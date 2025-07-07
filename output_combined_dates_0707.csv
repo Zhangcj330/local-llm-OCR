@@ -1,0 +1,166 @@
+db_column,label,Field name,db_column_old,field_value,section_number,section_name,type
+reference_number,reference number,reference number,reference_number,2.02506E+11,0,Top,text
+name_of_life_to_be_insured,Life to be insured,Life to be insured,life_be_insured,Kevin Smith,0,Top,text
+address,Address,address 1,address,717 Anzac Parade,4,POLICY DETAILS,text
+suburb,Suburb,suburb 1,suburb,Maroubra,4,POLICY DETAILS,text
+state,State,state 1,state,NSW,4,POLICY DETAILS,text
+postcode,Postcode,postcode 1,postcode,2035,4,POLICY DETAILS,text
+date_of_birth,date of birth,date_of_birth,date_of_birth,31/10/1998,4,POLICY DETAILS,date
+occupation, Occupation,occupation,occupation,Consultant,4,POLICY DETAILS,text
+licence_number,Licence number,5-Feb,licence_number,1.11222E+12,5,IDENTIFICATION,text
+passport_number,Passport number,5-Mar,passport_number,X25062025,5,IDENTIFICATION,text
+other_id,Other (please state),5-Apr,state,No value,5,IDENTIFICATION,text
+has_circulatory_system_disorder,"Any disease, disorder or condition relating to the heart and circulatory system including high blood pressure, raised cholesterol, heart murmur, stroke, brain haemorrhage, or embolism, chest pain or palpitations?",yn 16-1,disease_disorder_condition_relating_heart_circulatory,Y,6,INFORMATION TO BE OBTAINED FROM APPLICANT,checkbox
+has_diabetes_or_high_blood_sugar,Diabetes or raised blood sugar levels?,yn 16-2,diabetes_raised_blood_sugar_levels,Y,6,INFORMATION TO BE OBTAINED FROM APPLICANT,checkbox
+has_genitourinary_disorder,"Any disorder of the kidney, bladder or genitourinary system including prostate disorders, urinary tract infections, kidney stones, blood or protein in the urine?",yn 16-3,disorder_kidney_bladder_genitourinary_system_prostate,Y,6,INFORMATION TO BE OBTAINED FROM APPLICANT,checkbox
+has_digestive_system_disorder,"Any disorder of the digestive system, liver, oesophagus, stomach, gall bladder, pancreas or bowel including reflux, hernia, ulcers, haemochromatosis, colitis or Crohn’s disease?",yn 16-4,disorder_digestive_system_liver_oesophagus_stomach,Y,6,INFORMATION TO BE OBTAINED FROM APPLICANT,checkbox
+has_cancer_or_tumour,"Any cancer, leukaemia or tumour, lump, cyst or growth either malignant or benign (non-malignant)?",yn 16-5,cancer_leukaemia_tumour_lump_cyst_growth,Y,6,INFORMATION TO BE OBTAINED FROM APPLICANT,checkbox
+has_respiratory_disorder,"Asthma, sleep apnoea, or any other respiratory, lung or breathing disorder?",yn 16-6,asthma_sleep_apnoea_respiratory_lung_breathing,Y,6,INFORMATION TO BE OBTAINED FROM APPLICANT,checkbox
+has_neurological_condition,"Head injury, epilepsy, fits, convulsions or chronic headaches?",yn 16-7,head_injury_epilepsy_fits_convulsions_chronic,Y,6,INFORMATION TO BE OBTAINED FROM APPLICANT,checkbox
+has_neurological_symptoms,"Numbness, tingling, altered sensation, tremor, fainting attacks, problems with balance or co-ordination, or any form of paralysis or multiple sclerosis?",yn 16-8,numbness_tingling_altered_sensation_tremor_fainting,Y,6,INFORMATION TO BE OBTAINED FROM APPLICANT,checkbox
+has_eye_or_ear_disorder,"Any disorder of the eyes or ears, including blindness, blurred or double vision (other than sight problems corrected by glasses or contact lenses) or impaired hearing or tinnitus?",yn 16-9,disorder_eyes_ears_blindness_blurred_double,Y,6,INFORMATION TO BE OBTAINED FROM APPLICANT,checkbox
+has_skin_condition,"Eczema, dermatitis, psoriasis or any other skin condition?",yn 16-10,eczema_dermatitis_psoriasis_skin_condition,Y,6,INFORMATION TO BE OBTAINED FROM APPLICANT,checkbox
+has_back_or_neck_pain,"Back or neck pain including muscular pain, strain, whiplash and sciatica?",yn 16-11,back_neck_pain_muscular_pain_strain,Y,6,INFORMATION TO BE OBTAINED FROM APPLICANT,checkbox
+has_joint_bone_or_muscle_disorder,"Any joint (eg wrist, elbow, shoulder, ankle, knee, hip), bone or muscle pain or disorder including RSI?",yn 16-12,joint_eg_wrist_elbow_shoulder_ankle,Y,6,INFORMATION TO BE OBTAINED FROM APPLICANT,checkbox
+has_arthritis_or_osteoporosis_or_gout,"Rheumatoid arthritis, other forms of arthritis, osteoporosis or gout?",yn 16-13,rheumatoid_arthritis_forms_arthritis_osteoporosis_gout,Y,6,INFORMATION TO BE OBTAINED FROM APPLICANT,checkbox
+has_blood_disorder,Any blood disorder including anaemia?,yn 16-14,blood_disorder_anaemia,Y,6,INFORMATION TO BE OBTAINED FROM APPLICANT,checkbox
+has_thyroid_disorder_or_lupus,Any thyroid disorder or lupus? ,yn 16-15,thyroid_disorder_lupus,Y,6,INFORMATION TO BE OBTAINED FROM APPLICANT,checkbox
+has_mental_or_nervous_condition,"Depression, anxiety, panic attacks, stress, psychosis, schizophrenia, bipolar disorder, chronic fatigue, post natal depression or any other mental or nervous condition? ",yn 16-16,depression_anxiety_panic_attacks_stress_psychosis,Y,6,INFORMATION TO BE OBTAINED FROM APPLICANT,checkbox
+has_female_reproductive_disorder_or_pregnancy,"Any disorder of the cervix (including abnormal Pap smear), ovary, uterus, breast or endometrium, or are you currently pregnant?",yn 16-12b,disorder_cervix_abnormal_pap_smear_ovary,Y,6,INFORMATION TO BE OBTAINED FROM APPLICANT,checkbox
+pregnant_expected_date,"If pregnant, please advise expected delivery date","if_pregnant,_please_advise_expected_delivery_date","if_pregnant,_please_advise_expected_delivery_date",1/1/2025,6,INFORMATION TO BE OBTAINED FROM APPLICANT,date
+has_pregnancy_complications,Any complications of pregnancy or childbirth or a child with congenital abnormalities?,yn 16-14b,complications_pregnancy_childbirth_child_congenital_abnormalities,Y,6,INFORMATION TO BE OBTAINED FROM APPLICANT,checkbox
+has_substance_or_alcohol_use_history,"Have you ever injected, smoked or otherwise taken recreational or non-prescription drugs, taken any drug other than as medically directed or received advice and/or counselling for excess alcohol consumption from any health professional?",yn 16-15b,injected_smoked_otherwise_taken_recreational_nonprescription,Y,6,INFORMATION TO BE OBTAINED FROM APPLICANT,checkbox
+has_positive_hiv_or_hepatitis_test,"Have you ever tested positive for HIV/AIDS, Hepatitis B or C, or are you awaiting the results of such a test (other than for this application)?",yn 16-15ba,tested_positive_hivaids_hepatitis_b_c,Y,6,INFORMATION TO BE OBTAINED FROM APPLICANT,checkbox
+has_high_risk_hiv_exposure_history,"In the last 5 years have you engaged in any activity reasonably expected to having an increased risk or exposure to the HIV/AIDS virus? (This includes unprotected anal sex, sex with a sex worker or sex with someone you know, or suspect to be HIV positive).",yn 16-15bb,5_engaged_activity_reasonably_expected_having,Y,6,INFORMATION TO BE OBTAINED FROM APPLICANT,checkbox
+has_absence_from_work_due_to_illness_or_injury,Have you in the last five years been absent from work or your usual duties for a period of more than five days through any illness or injury not previously disclosed in this application?,yn 16-15bc,absent_work_period_days_illness_injury,Y,6,INFORMATION TO BE OBTAINED FROM APPLICANT,checkbox
+has_undiagnosed_symptoms_or_condition,"Apart from any condition already disclosed, do you have any symptoms of illness, any physical defect, or any condition for which you receive medical advice or treatment?",yn 16-15bd,apart_condition_already_symptoms_illness_physical,Y,6,INFORMATION TO BE OBTAINED FROM APPLICANT,checkbox
+has_recent_medication_prescribed,"Apart from treating any condition already disclosed, have you in the last two years had medication prescribed (except contraceptives or antibiotics)?",yn 16-15be,apart_treating_condition_already_two_had,Y,6,INFORMATION TO BE OBTAINED FROM APPLICANT,checkbox
+has_recent_medical_tests,"Apart from investigating any condition already disclosed, have you had any medical test (eg ECG, colonoscopy, endoscopy, gastroscopy or ultrasound)?",yn 16-15bf,apart_investigating_condition_already_had_medical,Y,6,INFORMATION TO BE OBTAINED FROM APPLICANT,checkbox
+has_genetic_testing_history_or_intention,"Apart from investigating any condition already disclosed, have you ever had a genetic test where you received (or are currently awaiting) an individual result or are you considering having a genetic test (excluding genetic screening of a child during pregnancy)?",yn 16-15bg,apart_investigating_condition_already_had_genetic,Y,6,INFORMATION TO BE OBTAINED FROM APPLICANT,checkbox
+plans_future_medical_advice_or_treatment,"Apart from any condition already disclosed, do you plan to seek or are you awaiting medical advice, investigation or treatment for any other current health condition or symptoms?",yn 16-15bh,apart_condition_already_plan_seek_awaiting,Y,6,INFORMATION TO BE OBTAINED FROM APPLICANT,checkbox
+medical_history_details,Please provide details if any questions 1-27 answered yes,27 details,details_questions_127_answered_yes,"Sample text to answer qustion 3
+
+Sample text to answer question 4
+",6,INFORMATION TO BE OBTAINED FROM APPLICANT,text
+family_history,"Has any of your immediate family (mother, father, brother or sister) been diagnosed with any of the following conditions before the age of 60? (If family history is unknown, answer no) ",yn 15-1,has_immediate_family_mother_father_brother,Y,7,FAMILY HISTORY,checkbox
+family_history_heart_disease,Heart disease (eg angina or heart attack) or stroke,yn 15-1a,heart_disease_eg_angina_heart_attack,Y,7,FAMILY HISTORY,checkbox
+family_history_cardiomyopathy,Cardiomyopathy,yn 15-1b,cardiomyopathy,No value,7,FAMILY HISTORY,checkbox
+family_history_breast_cancer,"Breast, cervical and/or ovarian cancer",yn 15-1c,breast_cervical_andor_ovarian_cancer,No value,7,FAMILY HISTORY,checkbox
+family_history_bowel_cancer,Bowel cancer or polyposis of the colon,yn 15-1d,bowel_cancer_polyposis_colon,No value,7,FAMILY HISTORY,checkbox
+family_history_other_cancer,Any other type of cancer,yn 15-1e,type_cancer,No value,7,FAMILY HISTORY,checkbox
+family_history_diabetes,Diabetes,yn 15-1f,diabetes,Y,7,FAMILY HISTORY,checkbox
+family_history_type_1_diabetes,"Please specify if: Type 1 (early onset, insulin dependent)",yn 15-1j,specify_type_1_early_onset_insulin,N,7,FAMILY HISTORY,checkbox
+family_history_type_2_diabetes,Or Type 2,,,,,,
+family_history_alzheimer_disease,Alzheimer’s disease,yn 15-1g,alzheimers_disease,No value,7,FAMILY HISTORY,checkbox
+family_history_multiple_sclerosis,Multiple sclerosis,yn 15-1h,multiple_sclerosis,No value,7,FAMILY HISTORY,checkbox
+family_history_other_hereditary_disease," Motor neurone disease, Parkinson’s disease, Polycystic kidney disease and/or Huntington’s disease, mental illness and/or any other hereditary disorder (not previously listed in this section).",yn 15-1i,motor_neurone_disease_parkinsons_disease_polycystic,Y,7,FAMILY HISTORY,checkbox
+family_history_relationship_1,"If yes, please advise relevant condition, number of relatives and age(s) affected. Also include details and results of any investigations performed on you as a result of this history. [Relationship]",15-2 1,yes_relevant_condition_number_relatives_ages,Father,7,FAMILY HISTORY,text
+family_history_medical_condition_1,"If yes, please advise relevant condition, number of relatives and age(s) affected. Also include details and results of any investigations performed on you as a result of this history. [ Medical Condition(ie breast cancer, heart attack]",15-2 2,yes_relevant_condition_number_relatives_ages,Mild Stroke,7,FAMILY HISTORY,text
+family_history_age_when_diagnosed_1,"If yes, please advise relevant condition, number of relatives and age(s) affected. Also include details and results of any investigations performed on you as a result of this history. [Age when diagnosed]",15-2 age 1,yes_relevant_condition_number_relatives_ages,60,7,FAMILY HISTORY,text
+family_history_age_at_death_1,"If yes, please advise relevant condition, number of relatives and age(s) affected. Also include details and results of any investigations performed on you as a result of this history. [Age at death]",15-2 age 2,yes_relevant_condition_number_relatives_ages,-,7,FAMILY HISTORY,text
+family_history_relationship_2,"If yes, please advise relevant condition, number of relatives and age(s) affected. Also include details and results of any investigations performed on you as a result of this history. [Relationship]",15-2 3,yes_relevant_condition_number_relatives_ages,mother,7,FAMILY HISTORY,text
+family_history_medical_condition_2,"If yes, please advise relevant condition, number of relatives and age(s) affected. Also include details and results of any investigations performed on you as a result of this history. [ Medical Condition(ie breast cancer, heart attack]",15-2 4,yes_relevant_condition_number_relatives_ages,cancer,7,FAMILY HISTORY,text
+family_history_age_when_diagnosed_2,"If yes, please advise relevant condition, number of relatives and age(s) affected. Also include details and results of any investigations performed on you as a result of this history. [Age when diagnosed]",15-2 age 3,yes_relevant_condition_number_relatives_ages,20,7,FAMILY HISTORY,text
+family_history_age_at_death_2,"If yes, please advise relevant condition, number of relatives and age(s) affected. Also include details and results of any investigations performed on you as a result of this history. [Age at death]",15-2 age 4,yes_relevant_condition_number_relatives_ages,63,7,FAMILY HISTORY,text
+family_history_relationship_3,"If yes, please advise relevant condition, number of relatives and age(s) affected. Also include details and results of any investigations performed on you as a result of this history. [Relationship]",15-2 5,yes_relevant_condition_number_relatives_ages,sister,7,FAMILY HISTORY,text
+family_history_medical_condition_3,"If yes, please advise relevant condition, number of relatives and age(s) affected. Also include details and results of any investigations performed on you as a result of this history. [ Medical Condition(ie breast cancer, heart attack]",15-2 6,yes_relevant_condition_number_relatives_ages,HS,7,FAMILY HISTORY,text
+family_history_age_when_diagnosed_3,"If yes, please advise relevant condition, number of relatives and age(s) affected. Also include details and results of any investigations performed on you as a result of this history. [Age when diagnosed]",15-2 age 5,yes_relevant_condition_number_relatives_ages,30,7,FAMILY HISTORY,text
+family_history_age_at_death_3,"If yes, please advise relevant condition, number of relatives and age(s) affected. Also include details and results of any investigations performed on you as a result of this history. [Age at death]",15-2 age 6,yes_relevant_condition_number_relatives_ages,40,7,FAMILY HISTORY,text
+known_to_examiner,Do you know the Applicant?,11-5 yn,know_applicant,Y,8,CONFIDENTIAL MEDICAL EXAMINATION (to be completed by examiner),checkbox
+previously_attended_examiner,Have you ever attended the Applicant?,11-6 yn,attended_applicant,Y,8,CONFIDENTIAL MEDICAL EXAMINATION (to be completed by examiner),checkbox
+unusual_build_or_behavior,"Is the Applicant’s build, appearance or behavior unusual? (eg including skin rashes, pigmentation)",11-7 yn,applicants_build_appearance_behavior_unusual_eg,Y,8,CONFIDENTIAL MEDICAL EXAMINATION (to be completed by examiner),checkbox
+signs_of_tobacco_alcohol_or_drugs,"Are there any signs of past or present over-indulgence in tobacco, alcohol or of the misuse of drugs?",11-8 yn,there_signs_past_present_overindulgence_tobacco,Y,8,CONFIDENTIAL MEDICAL EXAMINATION (to be completed by examiner),checkbox
+ever_smoked,Has the applicant ever smoked,11-9 yn,Smoker,Y,8,CONFIDENTIAL MEDICAL EXAMINATION (to be completed by examiner),checkbox
+height_cm,Height (cm),7-1 cm,height_cm,177,9,MEASUREMENTS,text
+height_feet,Height (ft),7-1 ft,height_ft,2,9,MEASUREMENTS,text
+height_inches,Height (in),7-1 in,height,89,9,MEASUREMENTS,text
+weight_kg,Weight (kg),7-1 kg,weight_kg,74,9,MEASUREMENTS,text
+weight_stone,Weight (st),7-1 st,weight_st,9,9,MEASUREMENTS,text
+weight_lbs,Weight (lb),7-1 lb,weight_lb,90,9,MEASUREMENTS,text
+chest_full_inspiration_cm,Chest Full inspiration (cm),7-1 kga,chest_full_inspiration_cm,98,9,MEASUREMENTS,text
+chest_full_inspiration_inches,Chest Full inspiration (in),7-1 sta,chest_full_inspiration,32,9,MEASUREMENTS,text
+chest_full_expiration_cm,Chest Full expiration (cm),7-1 kgb,chest_full_expiration_cm,92,9,MEASUREMENTS,text
+chest_full_expiration_inches,Chest Full expiration (in),7-1 stb,chest_full_expiration,e5,9,MEASUREMENTS,text
+waist_circumference_cm,Waist Circumference (cm),7-1 kgc,waist_circumference_cm,81,9,MEASUREMENTS,text
+waist_circumference_inches,Waist Circumference (in),7-1 stc,waist_circumference,67,9,MEASUREMENTS,text
+hips_circumference_cm,Hips Circumference (cm),7-1 kgd,hips_circumference_cm,96,9,MEASUREMENTS,text
+hips_circumference_inches,Hips Circumference (in),7-1 std,hips_circumference,89,9,MEASUREMENTS,text
+recent_weight_variation,Has there been any recent variation in weight?,6-3a yn,has_there_recent_variation_weight,Y,9,MEASUREMENTS,checkbox
+weight_variation_details,Has there been any recent variation in weight? Details,6-3 details,has_there_recent_variation_weight_details,"Measurement text here
+=and here too",9,MEASUREMENTS,text
+chest_expansion_details,"If the chest expansion is less than 5 cms, please comment as to cause.",6-3 details2,chest_expansion_less_5_cms_comment,#NAME?,9,MEASUREMENTS,text
+respiratory_abnormality,"Is there any abnormality of the respiratory system to palpitation, percussion or auscultation?",7-2c yn,there_abnormality_respiratory_system_palpitation_percussion,Y,10,RESPIRATORY SYSTEM,checkbox
+respiratory_fabnormality_details,"Is there any abnormality of the respiratory system to palpitation, percussion or auscultation? Yes Provide details",6-3 details2a,there_abnormality_respiratory_system_palpitation_percussion,abnormality of the respiroty sys,10,RESPIRATORY SYSTEM,text
+respiratory_sign,Is there any sign of past or present respiratory disease?,7-2d yn,there_sign_past_present_respiratory_disease,Y,10,RESPIRATORY SYSTEM,checkbox
+respiratory_sign_details,Is there any sign of past or present respiratory disease?,6-3 details3,there_sign_past_present_respiratory_disease_details,respiratory disease,10,RESPIRATORY SYSTEM,text
+pulse_rate_and_character,What is the rate and character of the pulse?,8-3 details,what_rate_character_pulse,"Rhythm regular, Strong and non-bounding, normal volume",11,CIRCULATORY SYSTEM,text
+apex_interspace_position,What is the position of the Apex beat of the heart? (interspace),apex,what_position_apex_beat_heart_interspace,fifth left,11,CIRCULATORY SYSTEM,text
+apex_distance_from_midsternal,What is the position of the Apex beat of the heart? (cm from the mid-stern line),apex1,what_position_apex_beat_heart_cm,10,11,CIRCULATORY SYSTEM,text
+cardiac_enlargement, Is there any evidence of cardiac enlargement?,yn 20-1,there_evidence_cardiac_enlargement,Y,11,CIRCULATORY SYSTEM,checkbox
+cardiac_enlargement_details, Is there any evidence of cardiac enlargement? (details),20-1 details,there_evidence_cardiac_enlargement_details,evidence of cardiac,11,CIRCULATORY SYSTEM,text
+abnormal_heart_sounds_or_rhythm,Is there any abnormality in the heart sounds or rhythm?,yn 20-2,there_abnormality_heart_sounds_rhythm,Y,11,CIRCULATORY SYSTEM,checkbox
+abnormal_heart_sounds_or_rhythm_details,Is there any abnormality in the heart sounds or rhythm? Details,20-2 details,there_abnormality_heart_sounds_rhythm_details,abormality of heart sounds,11,CIRCULATORY SYSTEM,text
+murmurs,Is any murmur present?,yn 22-6,murmur_present,Y,11,CIRCULATORY SYSTEM,checkbox
+murmurs_details,Is any murmur present? details,22-6 details,murmur_present_details,"describe fully incuding the site, timing, intensity",11,CIRCULATORY SYSTEM,text
+bp_Systolic_1,What is the Blood Pressure? (Auscultatory method) [Systolic],mmhg 1,what_blood_pressure_auscultatory_method_systolic,118,11,CIRCULATORY SYSTEM,text
+bp_Diastolic_1,What is the Blood Pressure? (Auscultatory method) [Diastolic],mmhg 2,what_blood_pressure_auscultatory_method_diastolic,76,11,CIRCULATORY SYSTEM,text
+bp_Systolic_2,What is the Blood Pressure? (Auscultatory method) [Systolic],mmhg 1a,what_blood_pressure_auscultatory_method_systolic,114,11,CIRCULATORY SYSTEM,text
+bp_Diastolic_2,What is the Blood Pressure? (Auscultatory method) [Diastolic],mmhg 2a,what_blood_pressure_auscultatory_method_diastolic,74,11,CIRCULATORY SYSTEM,text
+bp_Systolic_3,What is the Blood Pressure? (Auscultatory method) [Systolic],mmhg 1c,what_blood_pressure_auscultatory_method_systolic,116,11,CIRCULATORY SYSTEM,text
+bp_Diastolic_3,What is the Blood Pressure? (Auscultatory method) [Diastolic],mmhg 2c,what_blood_pressure_auscultatory_method_diastolic,75,11,CIRCULATORY SYSTEM,text
+peripheral_abnormalities,Is there any abnormality of the peripheral arterial or venous circulation?,yn 5-13,there_abnormality_peripheral_arterial_venous_circulation,Y,11,CIRCULATORY SYSTEM,checkbox
+peripheral_abnormalities_details,Is there any abnormality of the peripheral arterial or venous circulation? Details,5-13 details,there_abnormality_peripheral_arterial_venous_circulation,abnormal peripheral,11,CIRCULATORY SYSTEM,checkbox
+heart_and_vascular_system_abnormal,Do you consider the heart and vascular system to be abnormal?,6-3z yn,consider_heart_vascular_system_be_abnormal,Y,11,CIRCULATORY SYSTEM,checkbox
+heart_and_vascular_system_abnormal_details,Do you consider the heart and vascular system to be abnormal? (Details),6-3z details,consider_heart_vascular_system_be_abnormal,vassular system due to ab,11,CIRCULATORY SYSTEM,text
+on_treatment_for_hypertension,Is the examinee now on treatment for hypertension?,yn 22-3,examinee_now_treatment_hypertension,Y,11,CIRCULATORY SYSTEM,checkbox
+hypertension_pretreatment_bp,Pre-treatment blood pressure level including date(s):,24-7 details,pretreatment_blood_pressure_level_dates,pre - treatemtn,11,CIRCULATORY SYSTEM,text
+hypertension_duration,Duration of treatment:,24-7 details1,duration_treatment,suration of treatment,11,CIRCULATORY SYSTEM,text
+hypertension_treatment_nature,Nature of treatment:,24-7 details2,nature_treatment,nature of treatemnt,11,CIRCULATORY SYSTEM,text
+tongue_mouth_throat_abnormality,"Is there any abnormality of tongue, mouth or throat?",yn 22-2,there_abnormality_tongue_mouth_throat,Y,12,"DIGESTIVE, ENDOCRINE AND LYMPH SYSTEMS",checkbox
+tongue_mouth_throat_abnormality_details,"Is there any abnormality of tongue, mouth or throat? (Details)",22-2 details,there_abnormality_tongue_mouth_throat_details,abnormality of tounge,12,"DIGESTIVE, ENDOCRINE AND LYMPH SYSTEMS",text
+liver_spleen_abdominal_abnormality,,,,,,,
+liver_spleen_abdominal_abnormality_details,"Is there any palpable abnormality of the liver, spleen or other abdominal organs? (Details)",22-3 details,there_palpable_abnormality_liver_spleen_abdominal,abnormality of liver,12,"DIGESTIVE, ENDOCRINE AND LYMPH SYSTEMS",text
+hernia_present,Is a hernia present?,yn 21-3,hernia_present,Y,12,"DIGESTIVE, ENDOCRINE AND LYMPH SYSTEMS",checkbox
+hernia_details, Is a hernia present? (Details),21-3 details,hernia_present_details,hernia in the past,12,"DIGESTIVE, ENDOCRINE AND LYMPH SYSTEMS",text
+lymph_gland_abnormality,"Is there any abnormality of lymph glands in the neck, axillae or inguinal regions?",yn 21-4,there_abnormality_lymph_glands_neck_axillae,Y,12,"DIGESTIVE, ENDOCRINE AND LYMPH SYSTEMS",checkbox
+lymph_gland_abnormality_details,"Is there any abnormality of lymph glands in the neck, axillae or inguinal regions? Details",21-4 details,there_abnormality_lymph_glands_neck_axillae,abnormality of lymp,12,"DIGESTIVE, ENDOCRINE AND LYMPH SYSTEMS",text
+genito_urinary_abnormality,"Is there any genito-urinary abnormality? (eg stricture, prostate)",yn 21-5,there_genitourinary_abnormality_eg_stricture_prostate,Y,13,GENITO-URINARY SYSTEMS,checkbox
+genito_urinary_abnormality_details,"Is there any genito-urinary abnormality? (eg stricture, prostate) (Details)",21-5 details,there_genitourinary_abnormality_eg_stricture_prostate,genito-urinary,13,GENITO-URINARY SYSTEMS,text
+urine_protein, Does the urine contain: Protein (Albumin)? ,yn 16-19,urine_contain_protein_albumin,Y,13,GENITO-URINARY SYSTEMS,checkbox
+urine_sugar, Does the urine contain: Sugar? ,yn 16-20,urine_contain_sugar,Y,13,GENITO-URINARY SYSTEMS,checkbox
+urine_blood, Does the urine contain: Blood? ,yn 16-21,urine_contain_blood,Y,13,GENITO-URINARY SYSTEMS,checkbox
+urine_blood_menstruating,Please  indicate if applicant is menstruating.,yn 16-22,indicate_applicant_menstruating,Y,13,GENITO-URINARY SYSTEMS,checkbox
+urine_other_abnormalities,Other abnormalities?,yn 16-23,abnormalities,Y,13,GENITO-URINARY SYSTEMS,checkbox
+urine_other_abnormalities_details,Other abnormalities? (Please indicate what these are.),24-10 details,abnormalities_indicate_what_these,other ab =normality,13,GENITO-URINARY SYSTEMS,text
+is_pregnant,Is the applicant pregnant?,yn 11,applicant_pregnant,Y,13,GENITO-URINARY SYSTEMS,text
+expected_pregnant_delivery_date,Is the applicant pregnant?  Please provide expected delivery date,is_the_applicant_pregnant?__please_provide_expected_delivery_date,is_the_applicant_pregnant?__please_provide_expected_delivery_date,Invalid Date,13,GENITO-URINARY SYSTEMS,date
+vision_defect_or_eye_abnormality,Is there any defect of vision or abnormality of the eyes?,yn 23-4,there_defect_vision_abnormality_eyes,Y,14,NERVOUS SYSTEM,checkbox
+vision_defect_or_eye_abnormality_details,Is there any defect of vision or abnormality of the eyes? Details,23-4 details,there_defect_vision_abnormality_eyes_details,"Mild myopia, astigmatism, and conjunctival nevus",14,NERVOUS SYSTEM,text
+hearing_or_speech_defect,Is there any defect in hearing or speech?,yn 23-5,there_defect_hearing_speech,Y,14,NERVOUS SYSTEM,text
+hearing_or_speech_defect_details,Is there any defect in hearing or speech? Details,23-6 details,there_defect_hearing_speech_details,Mild tinnitus,14,NERVOUS SYSTEM,text
+ear_discharge_or_deafness_auriscopic_examination_details, Is there any evidence of mental abnormality?,24-4 details,there_evidence_mental_abnormality,present nervus system,14,NERVOUS SYSTEM,checkbox
+mental_abnormality, Is there any evidence of mental abnormality?,yn 21-1,there_evidence_mental_abnormality,Y,14,NERVOUS SYSTEM,checkbox
+mental_abnormality_details, Is there any evidence of mental abnormality? Details,21-1 details,there_evidence_mental_abnormality_details,mental ab,14,NERVOUS SYSTEM,text
+central_or_peripheral_disorder, Is there any evidence of disorder of the central or peripheral nervous system?,yn 21-2,there_evidence_disorder_central_peripheral_nervous,Y,14,NERVOUS SYSTEM,checkbox
+central_or_peripheral_disorder_details,Is there any evidence of disorder of the central or peripheral nervous system? Details,21-2 details,there_evidence_disorder_central_peripheral_nervous,ab of cenetral nervous system,14,NERVOUS SYSTEM,text
+joint_abnormality,Is there any abnormality of the form or function of the joints?,yn 20-6,there_evidence_disorder_joints,Y,15, MUSCULO-SKELETAL SYSTEM AND SKIN,checkbox
+joint_abnormality_details,Is there any abnormality of the form or function of the joints? Details,20-6 details,there_evidence_disorder_joins_details,ab function of joints,15, MUSCULO-SKELETAL SYSTEM AND SKIN,text
+muscle_or_connective_tissue_abnormality,Is there any abnormality of the form or function of the muscles or connective tissues?,yn 20-4,there_abnormality_form_function_muscles_connective,Y,15, MUSCULO-SKELETAL SYSTEM AND SKIN,checkbox
+muscle_or_connective_tissue_abnormality_details,Is there any abnormality of the form or function of the muscles or connective tissues? Details,20-4 details,there_abnormality_form_function_muscles_connective,ab of musclues or connective tissues,15, MUSCULO-SKELETAL SYSTEM AND SKIN,text
+back_or_neck_abnormality,Is there any abnormality of the form or function of the back or neck including the cervical and lumbar spine,yn 19-2,there_abnormality_form_function_back_neck,Y,15, MUSCULO-SKELETAL SYSTEM AND SKIN,checkbox
+back_or_neck_abnormality_details,Is there any abnormality of the form or function of the back or neck including the cervical and lumbar spine. Details,19-2 details,there_abnormality_form_function_back_neck,cervical and lumbar spine,15, MUSCULO-SKELETAL SYSTEM AND SKIN,text
+skin_disorder, Is there any evidence of any disorder of the skin,yn 15-3 1,there_evidence_disorder_skin,Y,15, MUSCULO-SKELETAL SYSTEM AND SKIN,text
+skin_disorder_details, Is there any evidence of any disorder of the skin. Details,15-3 details 1a,there_evidence_disorder_skin_details,Seborrhoeic dermatitis caused by eczema,15, MUSCULO-SKELETAL SYSTEM AND SKIN,text
+medical_attendants_reports_required,Do you consider any medical attendant’s reports or any special tests are required,yn 5-13a,consider_medical_attendants_reports_special_tests,Y,16,SUMMARY,checkbox
+medical_attendants_reports_details,Do you consider any medical attendant’s reports or any special tests are required.  Please provide details.,5-13 detailsa,consider_medical_attendants_reports_special_tests,medical attendants,16,SUMMARY,text
+likely_to_require_surgery,Do you consider the person examined to be likely to require any surgical operation?,6-3a ynb,consider_person_examined_be_likely_require,Y,16,SUMMARY,checkbox
+likely_to_require_surgery_details,Do you consider the person examined to be likely to require any surgical operation?  Please provide details.,6-3 detailsb,consider_person_examined_be_likely_require,surical operation,16,SUMMARY,text
+unfavourable_history_personal_or_family,Please comment fully on any unfavourable features (either physical or mental) which could either reduce life expectancy or cause disablement: In the personal or family medical history:,6-3 detailsbc,comment_fully_unfavourable_features_either_physical,"Mild stroke on father's side, due to heavy smoking and drinking",16,SUMMARY,text
+unfavourable_findings_medical_exam,Please comment fully on any unfavourable features (either physical or mental) which could either reduce life expectancy or cause disablement: Disclosed by your medical examination:,6-3 detailsbd,comment_fully_unfavourable_features_either_physical,No value,16,SUMMARY,text
+examiner_name,Name,26 name2,name,Dr. Chris Minns,17,EXAMINER DETAILS,text
+examiner_address,Address,26 address 2,address,8 Kensington Street,17,EXAMINER DETAILS,text
+examiner_suburb,Suburb,26 suburb 2,suburb,Chippendale,17,EXAMINER DETAILS,text
+examiner_state,State,26 state 2,state,NSW,17,EXAMINER DETAILS,text
+examiner_postcode,Postcode,26 postcode 2,postcode,2008,17,EXAMINER DETAILS,text
+examiner_phone,Phone,26 phone 2,phone,0410 955 633,17,EXAMINER DETAILS,text
+examiner_personal_qualifications,Personal Qualifications,8 details,personal_qualifications,"MBBS, MD",17,EXAMINER DETAILS,text
