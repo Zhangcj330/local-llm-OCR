@@ -10,9 +10,7 @@ database = "medical_reports_db"
 username = "root"
 password = "MyRootPass123"
 port = 3306
-table_name = "medical_reports"
-update_on_duplicate = True
-create_table_if_not_exists = True
+
 
 
 results.to_mysql_db_grouped(

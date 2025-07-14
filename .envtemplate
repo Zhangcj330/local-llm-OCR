@@ -1,0 +1,10 @@
+
+BASE_URL = 
+GEMINI_API_KEY =
+
+# MySQL config
+DB_HOST=localhost
+DB_PORT=3306
+DB_NAME=medical_reports_db
+DB_USER=ocr_user
+DB_PASSWORD=ocr_password
