@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Test script for the new grouped tables functionality
+Test script for the grouped tables functionality
 Demonstrates how to use the split table design with PageBasedMedicalReportData
 """
 

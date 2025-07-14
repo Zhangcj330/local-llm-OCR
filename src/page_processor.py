@@ -10,9 +10,19 @@ from .image_processor import ImageProcessor
 from .data import (
     Page0Data, Page1Data, Page2Data, Page3Data, Page4Data, 
     Page5Data, Page6Data, Page7Data, Page8Data, 
-    PageBasedMedicalReportData, MEDICAL_HISTORY_QUESTIONS, FAMILY_HISTORY_QUESTIONS
+    PageBasedMedicalReportData
 )
 
+import os
+from dotenv import load_dotenv
+
+
+# Load variables from .env file
+load_dotenv()
+
+# Now you can access variables as usual
+api_key = os.environ.get("GEMINI_API_KEY")
+base_url = os.environ.get("BASE_URL")
 
 class PageProcessor:
     """Process medical forms page by page using ChatOllama with structured output"""
@@ -26,7 +36,7 @@ class PageProcessor:
         :param config_path: Path to the config.json file
         """
         self.model_name = model_name
-        self.base_url = "https://wygparnmg03l2f-8000.proxy.runpod.net"
+        self.base_url = base_url
         self.image_processor = ImageProcessor()
         
         # Load configuration
@@ -38,7 +48,7 @@ class PageProcessor:
             api_key="dummy-key",
             model=model_name
         )
-        self.gemini_llm = ChatGoogleGenerativeAI(model="gemini-2.5-flash", api_key="AIzaSyDJGFa_m8zgmL-jo6EfSvaWbInjvwzV1JY")
+        self.gemini_llm = ChatGoogleGenerativeAI(model="gemini-2.5-flash", api_key=api_key)
 
         # Create structured output versions for each page
         self.local_page_processors = {
