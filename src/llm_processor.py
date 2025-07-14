@@ -3,6 +3,7 @@ import time
 from datetime import datetime
 from langchain_ollama import OllamaLLM, ChatOllama
 from langchain_google_genai import ChatGoogleGenerativeAI
+from langchain_openai import ChatOpenAI
 from langchain_core.messages import HumanMessage
 from .image_processor import ImageProcessor
 from .data import MedicalReportData, ConsentFormData, BasicInfoAndHistoryExtraction, MedicalExaminationExtraction, SummaryAndExaminerExtraction, MEDICAL_HISTORY_QUESTIONS, FAMILY_HISTORY_QUESTIONS
@@ -73,7 +74,12 @@ class ClaimFormProcessor:
         
         content_blocks = [
             {"type": "text", "text": prompt},
-            {"type": "image_url", "image_url": f"data:image/png;base64,{image_b64}"}
+            {
+                "type": "image_url", 
+                "image_url": {
+                    "url": f"data:image/png;base64,{image_b64}"
+                }
+            }
         ]
         
         message = HumanMessage(content=content_blocks)

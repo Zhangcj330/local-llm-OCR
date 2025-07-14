@@ -3,3 +3,4 @@ langchain-core
 PyMuPDF
 Pillow
 pydantic
+mysql-connector-python
